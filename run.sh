@@ -2,7 +2,7 @@
 
 FILE_NAME=${1}
 PROGRAM_ARGS=${2}
-flags='-Wall -Wextra'
+flags='-Wall -Wextra -lm'
 
 # Ensure 'bin' directory exists
 mkdir -p "bin"
@@ -15,7 +15,6 @@ fi
 
 # Compile the program
 echo "Compiling ${FILE_NAME}.c..."
-sleep 1
 gcc ${flags} ${FILE_NAME}.c -o bin/${FILE_NAME}
 
 # Check if compilation was successful
