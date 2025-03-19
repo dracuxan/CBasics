@@ -1,4 +1,5 @@
-/* K&R Style */
+/* GNU Style */
+
 #include "main.h"
 
 int
