@@ -22,4 +22,3 @@ main ()
 
   return 0;
 }
-
