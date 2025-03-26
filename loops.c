@@ -1,25 +1,30 @@
 #include "main.h"
 
-void print_numbers(int start, int end);
-void print_numbers_reverse(int start, int end);
+struct coordiantes {
+  int start;
+  int end;
+};
+
+void print_numbers(struct coordiantes c);
+void print_numbers_reverse(struct coordiantes c);
 
 int main() {
-  print_numbers(9, 10);
-  print_numbers_reverse(10, 1);
+  struct coordiantes c;
+  c.start = 10;
+  c.end = 20;
 
   return EXIT_SUCCESS;
 }
 
-void print_numbers(int start, int end) {
-  for (int i = start; i <= end; i++) {
+void print_numbers(struct coordiantes c) {
+  for (int i = c.start; i <= c.end; i++) {
     printf("%d\n", i);
   }
 }
 
-void print_numbers_reverse(int start, int end) {
-  int i = start;
-  while (i >= end) {
-    printf("%d\n", i);
-    i--;
+void print_numbers_reverse(struct coordiantes c) {
+  while (c.start >= c.end) {
+    printf("%d\n", c.start);
+    c.start--;
   }
 }
