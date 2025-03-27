@@ -1,6 +1,8 @@
 #include "main.h"
 
-int main() {
+int
+main ()
+{
   // char a = 'a';
   // char b = 'a';
   //
@@ -10,8 +12,8 @@ int main() {
   int x = 0;
   int *x_ptr = &x;
   *x_ptr = 1;
-  printf("%d\n", x);
-  printf("%d\n", *x_ptr);
+  printf ("%d\n", x);
+  printf ("%d\n", *x_ptr);
 
   return EXIT_SUCCESS;
 }
