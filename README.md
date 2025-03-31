@@ -1,6 +1,6 @@
 # CBasics
 
-CBasics is a repository for learning the fundamentals of C programming. It covers basic concepts and gradually transitions into low-level programming topics.
+Learning the fundamentals of C programming. Starting of with basic concepts and gradually transitioning into low-level programming topics.
 
 ## Executing Files
 
