@@ -8,6 +8,4 @@ int main() {
   return 0;
 }
 
-int findmax(int a, int b) {
-  return (a > b) ? a : b;
-}
+int findmax(int a, int b) { return (a > b) ? a : b; }

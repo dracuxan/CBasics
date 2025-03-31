@@ -1,14 +1,6 @@
 #include "main.h"
 
-typedef enum {
-  mon,
-  tue,
-  wed,
-  thu,
-  fri,
-  sat,
-  sun
-} Days;
+typedef enum { mon, tue, wed, thu, fri, sat, sun } Days;
 
 int main() {
   Days tody = wed;
