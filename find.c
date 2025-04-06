@@ -1,2 +1,5 @@
 #include "main.h"
-int main(int argc, char *argv[]) { return EXIT_SUCCESS; }
+int main() {
+  printf("Hello World");
+  exit(0);
+}
