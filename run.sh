@@ -1,7 +1,6 @@
 #!/bin/bash
 
 FILE_NAME=${1}
-PROGRAM_ARGS=${2}
 flags='-Wall -Wextra -lm'
 
 # Ensure 'bin' directory exists
@@ -21,12 +20,6 @@ gcc ${flags} ${FILE_NAME}.c -o bin/${FILE_NAME}
 if [[ $? -ne 0 ]]; then
     echo "Compilation failed."
     exit 1
-fi
-
-# Run the program with arguments if provided
-if [[ $# -eq 2 ]]; then
-    ./bin/${FILE_NAME} ${PROGRAM_ARGS}
-    exit 0
 fi
 
 ./bin/${FILE_NAME}
