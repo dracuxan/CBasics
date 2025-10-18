@@ -7,6 +7,3 @@
 #include "sys/wait.h"
 #include "time.h"
 #include "unistd.h"
-
-#define EXIT_SUCCESS 0
-#define EXIT_FAILURE 1
