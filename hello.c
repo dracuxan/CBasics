@@ -1,7 +1,9 @@
-// hello.c
-#include "main.h"
+#include <stdio.h>
 
 int main() {
-  printf("Hello World!\n");
-  return EXIT_SUCCESS;
+  char name[100];
+  printf("Enter name: ");
+  scanf("%s", name);
+  printf("Hello %s!\n", name);
+  return 0;
 }
